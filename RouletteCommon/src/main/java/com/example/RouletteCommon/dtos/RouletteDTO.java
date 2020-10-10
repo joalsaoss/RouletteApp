@@ -19,10 +19,4 @@ public class RouletteDTO extends ResponseDTO {
 	
 	@JsonProperty("state")
 	private String state;
-	
-	@JsonProperty("bets")
-	private List<BetDTO> bets;
-	
-	@JsonProperty("result")
-	private Integer result;
 }

@@ -5,10 +5,7 @@ package com.example.RouletteData.repo.dao.interfaces;
 
 import java.util.List;
 
-import com.example.RouletteCommon.dtos.BetDTO;
 import com.example.RouletteCommon.dtos.RouletteDTO;
-import com.example.RouletteData.models.Bet;
-import com.example.RouletteData.models.Roulette;
 
 /**
  * @author joals
@@ -18,40 +15,41 @@ public interface IRouletteServiceRepo {
 
 	/**
 	 * 
-	 * @return
-	 */
-	public Roulette createRoulette() throws Exception;
-
-	/**
-	 * 
-	 * @param idRoulette
+	 * @param roulette
 	 * @return
 	 * @throws Exception
 	 */
-	public Roulette openRoulette(Long idRoulette) throws Exception;
+	public RouletteDTO createRoulette(RouletteDTO roulette) throws Exception;
 
 	/**
 	 * 
-	 * @param bet
-	 * @param idRoulette
+	 * @param roulette
 	 * @return
 	 * @throws Exception
 	 */
-	public Roulette wagerNumberOrColor(Bet bet, Long idRoulette) throws Exception;
+	public RouletteDTO getRouletteById(RouletteDTO roulette) throws Exception;
+	
+	/**
+	 * 
+	 * @param roulette
+	 * @return
+	 * @throws Exception
+	 */
+	public RouletteDTO openRoulette(RouletteDTO roulette) throws Exception;
 
 	/**
 	 * 
-	 * @param idRoulette
+	 * @param roulette
 	 * @return
 	 * @throws Exception
 	 */
-	public Roulette closeRoulette(Long idRoulette) throws Exception;
+	public RouletteDTO closeRoulette(RouletteDTO roulette) throws Exception;
 
 	/**
 	 * 
 	 * @return
 	 * @throws Exception
 	 */
-	public List<Roulette> getAllRoulettes() throws Exception;
+	public List<RouletteDTO> getAllRoulettes() throws Exception;
 
 }

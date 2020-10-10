@@ -32,19 +32,18 @@ public interface IServiceRoulette {
 	/**
 	 * 
 	 * @param bet
-	 * @param idRoulette
 	 * @return
 	 * @throws Exception
 	 */
-	public RouletteDTO wagerNumberOrColor(BetDTO bet, Long idRoulette) throws Exception;
+	public BetDTO wagerNumberOrColor(BetDTO bet) throws Exception;
 
 	/**
 	 * 
-	 * @param idRoulette
+	 * @param bet
 	 * @return
 	 * @throws Exception
 	 */
-	public RouletteDTO closeRoulette(Long idRoulette) throws Exception;
+	public List<BetDTO> closeRoulette(BetDTO bet) throws Exception;
 
 	/**
 	 * 

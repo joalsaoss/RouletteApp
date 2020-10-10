@@ -11,6 +11,6 @@ import com.example.RouletteData.models.Bet;
  * @author joals
  *
  */
-public interface BetRepo extends CrudRepository<Bet, Long> {
+public interface IBetRepo extends CrudRepository<Bet, Long> {
 
 }

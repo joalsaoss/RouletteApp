@@ -18,14 +18,10 @@ import lombok.Data;
  */
 @RedisHash("Roulette")
 @Data
-public class Roulette extends Response {
+public class Roulette {
 	@Id
 	private Long idRoulette;
 	
 	@JsonProperty("state")
-	private String state;
-	
-	@JsonProperty("bets")
-	private List<Bet> bets;
-	
+	private String state;	
 }

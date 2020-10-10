@@ -140,7 +140,7 @@
 				<configuration>
 					<filesets>
 						<fileset>
-							<directory>src/main/java/com/example/roulette_data/mappers</directory>
+							<directory>src/main/java/com/example/RouletteData/mappers</directory>
 							<includes>
 								<include>**/*MapperImpl.java</include>
 							</includes>

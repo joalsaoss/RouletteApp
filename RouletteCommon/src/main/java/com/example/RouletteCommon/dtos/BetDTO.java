@@ -13,6 +13,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  */
 @Data
 public class BetDTO extends ResponseDTO {
+	
+	@JsonProperty("id")
+	private Long idBet;
+	
+	@JsonProperty("idRoulette")
+	private Long idRoulette;
+	
 	@JsonProperty("idUser")
 	private String username;
 	

@@ -40,6 +40,7 @@ public class RouletteConstants {
 	
 	public static final String MESSAGE_INFO_WINNER = "winner";
 	public static final String MESSAGE_INFO_LOSER = "loser";
+	public static final String MESSAGE_INFO_PLAYING = "playing";
 
 	/**
 	 * Expceptions messages
@@ -59,7 +60,7 @@ public class RouletteConstants {
 	public static final String MESSAGE_ROULETTE_SUCCESS_WAGER = "message_roulette_success_wager";
 	public static final String MESSAGE_ROULETTE_SUCCESS_CLOSE = "message_roulette_success_close";
 	public static final String MESSAGE_ROULETTE_SUCCESS_GETALL = "message_roulette_success_getall";
-	
+	public static final String MESSAGE_ROULETTE_FOUND = "message_roulette_found";
 	public static final String MESSAGE_ROULETTE_NOT_OPEN = "message_roulette_not_open";
 	public static final String MESSAGE_ROULETTE_NOT_FOUND = "message_roulette_not_found";
 	
@@ -68,12 +69,23 @@ public class RouletteConstants {
 	public static final String MESSAGE_ROULETTE_ERROR_WAGER = "message_roulette_error_wager";
 	public static final String MESSAGE_ROULETTE_ERROR_CLOSE = "message_roulette_error_close";
 	public static final String MESSAGE_ROULETTE_ERROR_GETALL = "message_roulette_error_getall";
+	public static final String MESSAGE_ROULETTE_ISNULL = "message_roulette_isnull";
+	
 	/**
 	 * Response HTTP
 	 */
 	public static final int SUCCESS_RESPONSE = 200;
 	public static final int EXTERNAL_ERROR_RESPONSE = 400;
+	public static final int ERROR_ENTITY_NULL = 401;
+	public static final int ERROR_ENTITY_NOT_FOUND = 402;
+	public static final int ERROR_ROULETTE_NOT_OPEN = 403;
 	public static final int EXCEPCION_RESPONSE = 500;
+	
+	/**
+	 * Multiplicative factor per bet.
+	 */
+	public static final double MULT_BY_COLOR = 1.8;
+	public static final double MULT_BY_NUMBER = 5;
 
 	/**
 	 * Datetime formats
